@@ -1,0 +1,244 @@
+%-------------------------
+% Resume in Latex
+% Author : Jean Khoury
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\usepackage{hyperref}
+\hypersetup{
+    pdftitle={CV - Jean Khoury},
+    pdfsubject={CV},
+    pdfauthor={Jean Khoury}
+}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    \textbf{\Huge \scshape FirstName LastName} \\ \vspace{1pt}
+    \small 1.800.123.4567 $|$ \href{mailto:<yourEmail>}{{<yourEmail>}} $|$ 
+    \href{https://www.linkedin.com/in/username/?locale=en_US}{\underline{linkedin.com/in/username}} $|$
+    \href{https://jeankhoury.com}{\underline{jeankhoury.com}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Montreal}{2020-2023}
+      {Bachelor (B. Sc.) Computer Science}{}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+\resumeSubheading
+  {Software Development Engineer Intern}{June 2023 - Present}
+  {Amazon - Ads Optimization Team}{}
+  \resumeItemListStart
+    \resumeItem{Developed a critical client-facing feature for a high-traffic page with over 50 million advertisers.}
+    \resumeItem{Worked on both the front-end and back-end, creating a new API endpoint using Java Spring for the backend and building the front-end with React TypeScript.}
+    \resumeItem{Designed and implemented a cost-effective, scalable, and fault-tolerant system using state-of-the-art technologies and industry best practices.}
+    \resumeItem{Conducted rigorous testing, including A/B testing, to ensure the highest quality and reliability of the feature.}
+  \resumeItemListEnd
+  
+  \resumeSubheading
+      {Software Developer Engineer Intern}{May 2022 - August 2022}
+      {Amazon, Buy with prime team}{}
+      \resumeItemListStart
+        \resumeItem{Collaborated with client team to design and implement key features in converting a Rest API to GraphQL.}
+        \resumeItem{Deployed web architecture on AWS using ECS and Fargate, and automated cloud infrastructure using CDK for more efficient deployment and management.}
+        \resumeItem{Participated in team meetings and contributed innovative ideas and insights to drive continuous improvement.}
+        \resumeItem{Tested and maintained the system to ensure quality and reliability, providing ongoing support as needed.}
+        \\ 
+          \resumeItemListEnd
+
+  \resumeSubheading
+      {Teaching assistant}{January 2023 - June 2023}
+      {University of Montreal, Introduction to web technologies}{}
+      \resumeItemListStart
+        \resumeItem{Facilitate weekly, 2-hour web design sessions for a class of 30 students while assisting in the development of a comprehensive curriculum that emphasizes both the fundamentals of web design and important industry concepts such as accessibility, good coding practices, and UX principles.}
+        \\ 
+      \resumeItemListEnd
+       
+
+    \resumeSubheading
+      {Lead Quality Assurance Tester}{October 2020 - March 2022}
+      {StarDust Testing CTG Group}{}
+      \resumeItemListStart
+        \resumeItem{Conducted accessibility audits on websites and PDFs following WCAG 2.0 AA standard, reporting audit findings and contributing to the improvement of 50+ websites.}
+        \resumeItem{Reduced manual execution in accessibility audits by 50\% using selenium and other automated tools, streamlining the audit process and increasing efficiency..}
+        \resumeItem{Contributed to a fast-paced, agile environment focused on CI/CD, continually participating in sprint retrospectives to strengthen team, agile, and QA processes.}
+        %\resumeItem{Worked with a diverse range of clients, including Videotron, Desjardins, Bombardier, Rona, Circle K, and ADI Int, among others.}
+        \resumeItem{Conducted accessibility audits for high-profile clients, such as Hydro-Québec and the European Parliament, ensuring compliance with accessibility standards.}
+        \\ 
+
+      \resumeItemListEnd
+
+      
+    \resumeSubheading
+      {Digital Marketing Lead}{July 2018 - May 2020}
+      {Cuisine d’Or Catering}{}
+      \resumeItemListStart
+        \resumeItem{Taken my family's business online by setting up an online identity featuring branding, a website, social media, and search engine optimization (SEO).}
+        \resumeItem{Converted the traffic to more than 50 qualified leads (including Interpol and an Embassy). Analyzing the results and creating reports.}
+      \resumeItemListEnd
+      
+     
+    \resumeSubHeadingListEnd
+
+
+
+%-----------WORKSHOP-----------
+\section{Workshop and Projects}
+
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{"Short.001.lat" URL shortening platform} $|$ \emph{JavaScript}}{2020}
+          \resumeItemListStart
+            \resumeItem{URl shortening API using express JS. Front end available at     \href{https://short.001.lat}{\underline{short.001.lat}}}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{"Hack the fake: fighting disinformation" } $|$ \emph{Hackathon}}{2020}
+          \resumeItemListStart
+            \resumeItem{Prototyped a decentralized fact checking platform}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------Certification-----------
+\section{Certification}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+ \resumeProjectHeading
+          {\textbf{ISTQB® Certified Tester - Foundation Level} $|$ \emph{iSQI Group}}{2022}
+ \end{itemize}
+ 
+%
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, Java, Kotlin, Python, Ruby} \\
+     \textbf{Frameworks}{: AWS CDK, Express JS, React JS, Rails, TailWind CSS} \\
+     %\textbf{Standard}{: WCAG 2.1 for Web Accessibility} \\
+     %\textbf{Graphic Design}{: Adobe Illustrator, Photoshop, Figma} \\
+     \textbf{Testing}{: J-unit, Selenium, Azure DevOps, Jira}
+    }}
+ \end{itemize}
+ 
+ %-----------NON TECHNICAL SKILLS-----------
+\section{Non Technical}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: French (Native), English (Native)} \\
+     %\textbf{Traits}{: Autonomy, Adaptability, Curiosity, Willingness, Perseverance} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
